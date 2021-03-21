@@ -208,6 +208,10 @@ a {
 .modal-button {
   min-width: 200px;
   min-height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
   color: var(--secondary-accent-color);
   background-color: var(--accent-color);
   border-color: var(--accent-color);
@@ -540,22 +544,27 @@ a {
 .social__thumb--bgc {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.social__icons--color {
+.social__icons--color,
+.button__icon {
   fill: var(--secondary-accent-color);
 }
 
 .signup {
+  display: flex;
   align-items: center;
 }
 
-.footer form {
+.signup__form {
   display: inline-block;
   padding: 15px 16px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   width: 358px;
-  margin-right: 12px;
+
   text-align: center;
+}
+.signup__form--right {
+  margin-right: 12px;
 }
 
 .signup__input {
@@ -587,7 +596,7 @@ a {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.backdrop.is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -606,7 +615,7 @@ a {
   border-radius: 4px;
 }
 
-.close-button-wrap {
+.close-button {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -622,14 +631,14 @@ a {
   cursor: pointer;
 }
 
-form {
+.modal__form {
   display: flex;
   flex-direction: column;
   max-width: 480px;
   margin: 0 auto;
 }
 
-.form-name {
+.modal__name {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -638,21 +647,26 @@ form {
   margin-bottom: 12px;
 }
 
-.form-field-wrapper {
+.modal__field {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+.modal__field--bottom {
   margin-bottom: 10px;
 }
 
-.signup_form label {
-  margin-bottom: 4px;
+.modal__label {
   font-size: 12px;
   line-height: 1.16;
 }
+.modal__label--bottom {
+  margin-bottom: 4px;
+}
 
-.signup_form input,
-.signup_form textarea {
+.modal__input,
+.modal__textarea {
+  width: 100%;
   padding: 12px 12px 12px 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -662,35 +676,35 @@ form {
   letter-spacing: 0.01em;
 }
 
-.signup_form textarea {
+.modal__textarea {
   padding-left: 16px;
 }
-.signup_form textarea::placeholder {
+.modal__textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.signup_form input:focus,
-.signup_form textarea:focus {
+.modal__input:focus,
+.modal__textarea:focus {
   border-color: var(--accent-color);
   outline: none;
 }
 
-.form-icons {
+.modal__icons {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   margin-left: 12px;
 }
 
-.signup_form input:focus + .form-icons {
+.modal__input:focus .modal__icons {
   fill: var(--accent-color);
 }
 
-.signup_form > textarea {
+.modal__textarea--bottom {
   margin-bottom: 32px;
 }
 
-.agreement-group {
+.modal__agreement {
   position: relative;
   display: flex;
   align-items: center;
@@ -706,14 +720,13 @@ form {
 .agreement-group label {
   margin: 0;
 }
-.agree-stroke {
+.modal__label {
   display: inline-block;
   width: 423px;
   text-align: right;
 }
 
-.agree-checkbox,
-.custom-check-box {
+.modal__pseudo-checkbox {
   position: absolute;
   top: 50%;
   left: 13px;
@@ -721,7 +734,6 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* z-index: 0; */
   pointer-events: none;
   width: 16px;
   height: 15px;
@@ -729,33 +741,33 @@ form {
   border: 2px solid #000;
 }
 
-.custom-check-box {
+.modal__pseudo-checkbox {
   opacity: 0;
 }
 
-.check-box:checked ~ .agree-stroke .custom-check-box {
+.modal__check-box:checked ~ .modal__pseudo-checkbox {
   opacity: 1;
   border: 2px solid var(--accent-color);
   fill: var(--secondary-accent-color);
   background-color: var(--accent-color);
   /* background-origin: border-box; */
 }
-.check-box:checked ~ .agree-checkbox {
+.modal__check-box:checked .modal__pseudo-checkbox {
   border: 2px solid var(--accent-color);
 }
 
-.agreement-group .agree-stroke {
+.modal__stroke {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.agreement-link {
+.modal__agreement-link {
   color: var(--accent-color);
   text-decoration: underline;
 }
 
-.submit-btn {
+.modal-button {
   width: 200px;
   margin: 0 auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

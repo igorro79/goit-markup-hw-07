@@ -498,7 +498,7 @@
           <p class="footer__invitation">Подпишитесь на рассылку</p>
 
           <div class="signup">
-            <form class="signup__form" autocomplete="on" novalidate>
+            <form class="signup__form signup__form--right " autocomplete="on" novalidate>
               <label>
                 <input class="signup__input"
                   type="email"
@@ -522,69 +522,65 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close type="button" class="close-button-wrap">
-          <svg class="close-button" width="18px" height="18px">
+        <button data-modal-close type="button" class="close-button">
+          <svg class="close-button__icon" width="18px" height="18px">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
 
-        <div class="form-wrapper">
-          <p class="form-name">Оставьте свои данные, мы вам перезвоним</p>
-          <form class="signup_form" name="signup_form" autocomplete="on">
-            <label for="name">Имя</label>
-            <span class="form-field-wrapper"
-              ><input type="text" name="name" id="name" />
-              <svg class="form-icons" width="18px" height="18px">
+        <!-- <div class="form-wrapper"> -->
+          <p class="modal__name">Оставьте свои данные, мы вам перезвоним</p>
+          <form class="modal__form" name="signup_form" autocomplete="on">
+            <label class="modal__label modal__label--bottom" for="name">Имя</label>
+            <span class="modal__field modal__field--bottom"
+              ><input class="modal__input" type="text" name="name" id="name" />
+              <svg class="modal__icons" width="18px" height="18px">
                 <use href="./images/sprite.svg#icon-person-black"></use>
               </svg>
             </span>
 
-            <label for="tel">Телефон</label>
-            <span class="form-field-wrapper">
-              <input type="tel" name="tel" id="tel" />
-              <svg class="form-icons" width="18px" height="18px">
+            <label class="modal__label modal__label--bottom" for="tel">Телефон</label>
+            <span class="modal__field modal__field--bottom">
+              <input class="modal__input" type="tel" name="tel" id="tel" />
+              <svg class="modal__icons" width="18px" height="18px">
                 <use href="./images/sprite.svg#icon-phone-black"></use>
               </svg>
             </span>
 
-            <label for="mail"> Почта </label>
-            <span class="form-field-wrapper">
-              <input type="email" name="email" id="mail" />
-              <svg class="form-icons" width="18px" height="18px">
+            <label class="modal__label modal__label--bottom" for="mail"> Почта </label>
+            <span class="modal__field modal__field--bottom">
+              <input class="modal__input" type="email" name="email" id="mail" />
+              <svg class="modal__icons" width="18px" height="18px">
                 <use href="./images/sprite.svg#icon-email-black"></use>
               </svg>
             </span>
 
-            <label for="message" name="comment">Комментарий </label>
-            <textarea
+            <label class="modal__label modal__label--bottom" for="message" name="comment">Комментарий </label>
+            <textarea class="modal__textarea modal__textarea--bottom "
               name="message"
               id="message"
               rows="6"
               placeholder="Введите текст"
             ></textarea>
 
-            <div class="agreement-group" role="group" aria-label="agre">
-              <input
-                class="check-box visually-hidden"
+            <div class="modal__agreement" role="group" aria-label="agre">
+              
+              <label class="modal__label modal__stroke" for="check-box" class="modal__agree-text"
+                ><input
+                class="modal__check-box is-hidden"
                 type="checkbox"
                 name="comment"
                 id="check-box"
-              />
-              <label for="check-box" class="agree-stroke"
-                >Соглашаюсь с рассылкой и принимаю
-                <a href="" class="agreement-link">Условия договора</a
-                ><svg class="custom-check-box" width="18px" height="18px">
+              />Соглашаюсь с рассылкой и принимаю
+                <a href="" class="modal__agreement-link">Условия договора</a
+                ><svg class="modal__pseudo-checkbox" width="18px" height="18px">
                   <use href="./images/sprite.svg#icon-check"></use>
                 </svg>
               </label>
-              <span class="agree-checkbox"></span>
-              <!-- <svg class="custom-check-box" width="18px" height="18px">
-                <use href="./images/sprite.svg#icon-check"></use>
-              </svg> -->
             </div>
-            <button type="submit" class="sign-btn submit-btn">Отправить</button>
+            <button type="submit" class="modal-button submit-btn">Отправить</button>
           </form>
-        </div>
+        <!-- </div> -->
       </div>
     </div>
 
