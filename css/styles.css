@@ -73,6 +73,8 @@ a {
   color: var(--accent-color);
 }
 
+/* === site navigation block === */
+
 .site-nav {
   display: flex;
   margin-left: 93px;
@@ -83,6 +85,9 @@ a {
   position: relative;
   display: flex;
   align-items: center;
+}
+.site-nav__items--prepend {
+  margin-left: 50px;
 }
 
 .site-nav__link {
@@ -117,10 +122,20 @@ a {
   color: var(--accent-color);
 }
 
+/* === authentification block === */
+
 .auth-nav {
   display: flex;
   margin-left: auto;
   align-items: center;
+}
+
+.auth-nav__items {
+  align-items: center;
+}
+
+.auth-nav__items--prepend {
+  margin-left: 50px;
 }
 
 .auth-nav__link {
@@ -142,10 +157,6 @@ a {
   fill: var(--accent-color);
 }
 
-.site-nav__items + .site-nav__items {
-  margin-left: 50px;
-}
-
 .auth-nav__icon {
   width: 16px;
   height: 16px;
@@ -155,19 +166,11 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.auth-nav__items {
-  align-items: center;
-}
-
-.auth-nav__items + .auth-nav__items {
-  margin-left: 50px;
-}
-
 /* =========== END HEADER=========== */
 
 /* ============== HERO ============ */
 
-.hero-section {
+.hero {
   background-color: var(--grey-bgc);
   max-width: 1600px;
   margin-left: auto;
@@ -183,7 +186,7 @@ a {
   background-repeat: no-repeat;
 }
 
-.hero-section .container {
+.hero__container {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -191,7 +194,7 @@ a {
   padding-right: 252px;
 }
 
-.hero-title {
+.hero__title {
   color: var(--secondary-accent-color);
   font-size: 44px;
   font-weight: 700;
@@ -202,7 +205,7 @@ a {
   margin-bottom: 30px;
 }
 
-.sign-btn {
+.modal-button {
   min-width: 200px;
   min-height: 50px;
   color: var(--secondary-accent-color);
@@ -216,14 +219,14 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sign-btn:hover,
-.sign-btn:focus {
+.modal-button:hover,
+.modal-button:focus {
   background-color: #188ce8;
 }
 
 /* ============= feachers =============*/
 
-.feachers .container {
+.feachers__container {
   padding-top: 94px;
   padding-bottom: 47px;
 }
@@ -242,7 +245,7 @@ a {
   overflow: hidden;
 }
 
-.feachers-list {
+.feachers__list {
   display: flex;
   justify-content: center;
   margin-left: auto;
@@ -250,18 +253,18 @@ a {
   padding: 0px;
 }
 
-.feachers-list .items {
+.feachers__items {
   width: 270px;
   justify-items: center;
 }
 
-.feachers-list .items + .items {
+.feachers__items--left {
   margin-left: 30px;
 }
 
 /* ============== иконки приимуществ ==============*/
 
-.thumb {
+.feachers__thumb {
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -274,7 +277,7 @@ a {
 
 /* =========== END OF иконки приимуществ ==========*/
 
-.feachers-list-title {
+.feachers__title {
   color: var(--secondary-text-color);
   font-size: 14px;
   font-weight: 700;
@@ -285,7 +288,7 @@ a {
   margin-top: 0px;
   margin-bottom: 10px;
 }
-.feachers-list-text {
+.feachers__text {
   color: var(--primary-text-color);
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -299,12 +302,12 @@ a {
 
 /*============= чем мы занимаемся ==========*/
 
-.description .container {
+.description__container {
   padding-top: 47px;
   padding-bottom: 94px;
 }
 
-.description img {
+.description__icon {
   display: block;
 }
 
@@ -321,20 +324,20 @@ a {
   margin-bottom: 50px;
 }
 
-.description .list {
+.description__list {
   display: flex;
   justify-content: space-between;
 }
 
-.description .items + .items {
+.description__items--left {
   margin-left: 30px;
 }
 
-.description .items {
+.description__items--position {
   position: relative;
 }
 
-.image-cover {
+.description__cover {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -357,55 +360,60 @@ a {
 .team {
   background-color: #f5f4fa;
 }
-.team .container,
-.partners .container {
+.team__container,
+.partners__container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.team .list {
+.team__list {
   display: flex;
   padding: 0px;
   margin: 0px auto;
   justify-content: space-between;
 }
 
-.team .items {
+.team__items {
   background: var(--secondary-accent-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
 }
-.team-cards-descr {
+.team__meta {
   padding: 30px 32px;
 }
 
-.card-name {
+.team__name {
   color: var(--secondary-text-color);
   font-size: 16px;
   font-weight: 500;
   text-align: center;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+.team__name--bottom {
   margin-bottom: 10px;
 }
-.card-text {
+
+.team__text {
   color: var(--primary-text-color);
   font-size: 16px;
   font-weight: 400;
   text-align: center;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+.team__text--bottom {
   margin-bottom: 16px;
 }
 
-.team .icon-list {
+.social {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
 }
-.icons-thumb {
+
+.social__thumb {
   display: flex;
   height: 44px;
   width: 44px;
@@ -414,26 +422,30 @@ a {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-icons {
+
+.social__icons {
   fill: var(--primary-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-items-link:focus .icons-thumb,
-.icon-items-link:hover .icons-thumb,
-.icon-items-link:focus .team-icons,
-.icon-items-link:hover .team-icons {
-  fill: var(--secondary-accent-color);
+
+.social__link:focus .social__thumb,
+.social__link:hover .social__thumb {
   background-color: var(--accent-color);
+}
+
+.social__link:focus .social__icons,
+.social__link:hover .social__icons {
+  fill: var(--secondary-accent-color);
 }
 
 /*============= Постоянные клиенты =========== */
 
-.partners-list {
+.partners__list {
   display: flex;
   justify-content: space-between;
 }
 
-.partners-thumb {
+.partners__thumb {
   width: 170px;
   height: 90px;
   border: 1px solid var(--partner-icon);
@@ -444,16 +456,16 @@ a {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.partner-logo {
+.partners__logo {
   fill: var(--partner-icon);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.partners-link:hover .partner-logo,
-.partners-link:focus .partner-logo {
+.partners__link:hover .partners__logo,
+.partners__link:focus .partners__logo {
   fill: var(--accent-color);
 }
-.partners-link:hover .partners-thumb,
-.partners-link:focus .partners-thumb {
+.partners__link:hover .partners__thumb,
+.partners__link:focus .partners__thumb {
   border: 1px solid var(--accent-color);
 }
 
@@ -462,23 +474,19 @@ a {
 .footer {
   background-color: var(--grey-bgc);
 }
-.footer .container {
+.footer__container {
   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.main-footer-list {
-  display: flex;
-}
-.footer .logo-text {
+
+.footer__logo--inverse {
   color: var(--secondary-accent-color);
-
   display: inline-block;
-  margin-bottom: 20px;
 }
 
-.footer .accent {
-  color: var(--accent-color);
+.footer__logo--bottom {
+  margin-bottom: 20px;
 }
 
 .contacts {
@@ -488,8 +496,8 @@ a {
   letter-spacing: 0.03em;
 }
 
-.email,
-.phone {
+.address__email,
+.address__phone {
   color: rgb(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71em;
@@ -500,11 +508,11 @@ a {
   font-style: normal;
 }
 
-.address .items:not(:last-child) {
+.address__items--bottom {
   margin-bottom: 9px;
 }
 
-.invitation {
+.footer__invitation {
   color: var(--secondary-accent-color);
   font-weight: 700;
   font-size: 14px;
@@ -514,29 +522,29 @@ a {
   margin-bottom: 20px;
 }
 
-.footer .icon-list {
+.social {
   display: flex;
 }
 
-.footer-wraper:nth-child(1) {
+.footer__wrapper--right {
   margin-right: 70px;
 }
-.footer-wraper:nth-child(2) {
+.footer__wrapper--righter {
   margin-right: 93px;
 }
 
-.icon-list-items:not(:last-child) {
+.social__items--right {
   margin-right: 10px;
 }
 
-.footer .icons-thumb {
+.social__thumb--bgc {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-icons {
+.social__icons--color {
   fill: var(--secondary-accent-color);
 }
 
-.signup-wrap {
+.signup {
   align-items: center;
 }
 
@@ -550,7 +558,7 @@ a {
   text-align: center;
 }
 
-.footer input {
+.signup__input {
   background-color: var(--grey-bgc);
   border: none;
   color: var(--secondary-accent-color);
@@ -558,12 +566,13 @@ a {
   width: 100%;
 }
 
-.footer .sign-btn {
+.modal-button--append {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
-.signup-wrap .footer-icons {
+
+.button__icon--left {
   margin-left: 10px;
 }
 
