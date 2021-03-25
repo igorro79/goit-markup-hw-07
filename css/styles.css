@@ -213,7 +213,8 @@ a {
 .modal-button {
   min-width: 200px;
   min-height: 50px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  align-self: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
