@@ -342,17 +342,18 @@
     </main>
 
     <!-- footer -->
-
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__wrapper footer__wrapper--right">
+        <div class="footer__wrapper">
           <a href="/" class="logo footer__logo--inverse footer__logo--bottom"
             ><span class="logo__accent-color">Web</span>Sudio</a
           >
           <address class="address">
             <ul class="list">
               <li class="address__items address__items--bottom">
-                <a href="" class="contacts">г. Киев, пр-т Леси Украинки, 26</a>
+                <a href="" class="address__street"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
               </li>
               <li class="address__items address__items--bottom">
                 <a href="mailto:info@devstudio.co" class="address__email"
@@ -367,7 +368,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer__wrapper footer__wrapper--righter">
+        <div class="footer__wrapper footer__wrapper--left">
           <p class="footer__invitation footer__invitation--bottom">
             Присоединяйтесь
           </p>
@@ -413,8 +414,8 @@
                 <div class="social__thumb social__thumb--bgc">
                   <svg
                     class="social__icons social__icons--color"
-                    width="20px"
-                    height="20px"
+                    width="20"
+                    height="20"
                   >
                     <use href="./images/sprite.svg#icon-linkedin2"></use>
                   </svg></div
@@ -422,7 +423,7 @@
             </li>
           </ul>
         </div>
-        <div class="wrapper footer__wrapper--right">
+        <div class="wrapper footer__wrapper--lefter">
           <p class="footer__invitation footer__invitation--bottom">
             Подпишитесь на рассылку
           </p>
@@ -441,17 +442,20 @@
                   placeholder="E-mail"
                 />
               </label>
-            </form>
-            <button type="submit" class="modal-button modal-button--append">
-              Подписаться
-              <svg
-                class="button__icon button__icon--left"
-                width="24"
-                height="24"
+              <button
+                type="submit"
+                class="modal-button modal-button--append modal-button--left"
               >
-                <use href="./images/sprite.svg#icon-send"></use>
-              </svg>
-            </button>
+                Подписаться
+                <svg
+                  class="button__icon button__icon--left"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>

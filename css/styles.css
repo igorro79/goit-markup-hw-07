@@ -497,8 +497,8 @@ a {
 .footer__wrapper--left {
   margin-left: 70px;
 }
-.footer__wrapper--lefter {
-  margin-left: 93px;
+.footer__wrapper--end {
+  margin-left: auto;
 }
 
 .footer__logo--inverse {
@@ -750,7 +750,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 16px;
-  height: 15px;
+  height: 16px;
   border-radius: 4px;
   border: 2px solid #000;
 }
@@ -765,6 +765,12 @@ a {
   fill: var(--secondary-accent-color);
   background-color: var(--accent-color);
 }
+
+.modal__check-box:focus ~ .modal__pseudocheckbox-border {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .modal__check-box:checked ~ .modal__pseudocheckbox-border {
   border: 2px solid var(--accent-color);
 }
