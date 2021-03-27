@@ -1,0 +1,33 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: $secondary-text-color;
+  background-color: $white-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+%list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+%container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}

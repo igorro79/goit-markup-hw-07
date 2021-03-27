@@ -1,0 +1,10 @@
+.logo {
+  font-family: "raleway", serif;
+  color: $black-color;
+  font-size: 26px;
+  font-weight: 700;
+
+  &__accent-color {
+    color: $accent-color;
+  }
+}
