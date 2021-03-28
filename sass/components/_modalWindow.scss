@@ -40,6 +40,12 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   outline: none;
   cursor: pointer;
+
+  &:active {
+    outline: none;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .modal__form {
@@ -133,7 +139,7 @@
 }
 
 .modal__pseudo-checkbox,
-.modal__pseudocheckbox-border {
+.modal__pseudo-checkbox-border {
   position: absolute;
   top: 50%;
   left: 13px;
@@ -159,8 +165,7 @@
 }
 
 .modal__check-box:focus ~ .modal__pseudo-checkbox-border {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 4px 0.5px rgba(0, 0, 0, 1);
 }
 
 .modal__check-box:checked ~ .modal__pseudo-checkbox-border {
