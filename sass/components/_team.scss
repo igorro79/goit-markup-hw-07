@@ -3,13 +3,13 @@
 }
 .team__container,
 .partners__container {
-  @extend %container;
+  // @extend %container;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .team__list {
-  @extend %list;
+  // @extend %list;
   display: flex;
   padding: 0px;
   margin: 0px auto;
@@ -54,7 +54,7 @@
 }
 
 .social {
-  @extend %list;
+  // @extend %list;
   display: flex;
   justify-content: center;
 }

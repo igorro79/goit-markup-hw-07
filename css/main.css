@@ -34,19 +34,10 @@ a {
   text-decoration: none;
 }
 
-.site-nav, .auth-nav, .feachers__list, .team__list, .social, .partners__list, .list, .projects__filter-list {
+.list {
   list-style: none;
   margin: 0px;
   padding: 0px;
-}
-
-.header__container, .hero__container, .feachers__container, .description__container, .team__container,
-.partners__container, .footer__container, .projects__container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .header {
@@ -234,7 +225,6 @@ a {
 .modal-button {
   min-width: 200px;
   min-height: 50px;
-  /* margin: 0 auto; */
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;

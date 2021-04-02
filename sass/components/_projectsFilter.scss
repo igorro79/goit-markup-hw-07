@@ -1,11 +1,11 @@
 .projects__container {
-  @extend %container;
+  // @extend %container;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .projects__filter-list {
-  @extend %list;
+  // @extend %list;
   display: flex;
   justify-content: center;
 

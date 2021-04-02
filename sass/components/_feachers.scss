@@ -1,11 +1,11 @@
 .feachers__container {
-  @extend %container;
+  // @extend %container;
   padding-top: 94px;
   padding-bottom: 47px;
 }
 
 .feachers__list {
-  @extend %list;
+  // @extend %list;
   display: flex;
   justify-content: center;
   margin-left: auto;

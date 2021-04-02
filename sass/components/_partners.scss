@@ -1,11 +1,11 @@
 .partners__container {
-  @extend %container;
+  // @extend %container;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .partners__list {
-  @extend %list;
+  // @extend %list;
   display: flex;
   justify-content: space-between;
 }

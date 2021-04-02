@@ -2,7 +2,7 @@
   background-color: $grey-bgc;
 }
 .footer__container {
-  @extend %container;
+  // @extend %container;
   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -46,9 +46,9 @@
     letter-spacing: 0.03em;
   }
 }
-.list {
-  @extend %list;
-}
+// .address__list {
+//   @extend %list;
+// }
 
 .footer__invitation {
   color: $white-color;
@@ -64,7 +64,7 @@
 }
 
 .social {
-  @extend %list;
+  // @extend %list;
   display: flex;
 }
 
